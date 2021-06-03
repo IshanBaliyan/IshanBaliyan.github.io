@@ -12,6 +12,9 @@ import {LinkedIn, GitHub, ListAlt} from '@material-ui/icons';
 // publications / blogs (don't recommend) / etc... / resume
 
 // school (although you should use that one elsewhere)
+
+import Pdf from "./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf";
+
 // TODO Add devpost later
 // TODO Add University of Waterloo Later ("School")
 
@@ -31,12 +34,13 @@ export default function Topbar() {
                     </div>
                     <div className="itemContainer">
                         <ListAlt className="githubIcon"/>
-                        
-                        
                         {/* ReactPDF.render(<MyDocument />, "official_full_ishan_baliyan_website\Official_Reviewed_Resume_Waterloo_June_2021.pdf"); */}
                         
                         {/* <Link href={require("./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf")} target="blank">Resume</Link> */}
-                        <a href="./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf" download>Resume</a>
+                        {/* <a href="./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf" download>Resume</a> */}
+
+                        <a href={Pdf} target = "_blank" download>Resume</a>
+
                     </div>
                 </div>
                 <div className="right"></div>
