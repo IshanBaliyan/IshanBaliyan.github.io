@@ -1,0 +1,71 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: $mainColor;
+    position: fixed;
+    top: 0;
+
+    /* Z-index brings the topbar to the front when scrolling (i.e. it stays
+    when you scroll down) */
+    z-index: 2;
+
+    .wrapper{
+
+        // 10px padding from top/bottom and 30 px padding from left/right
+        padding: 10px 30px;
+
+        // Makes all the things listed in the topbar horizontal, no longer listed in vertical order
+        display: flex;
+
+        align-items: center;
+
+        // centers the items to their respective left/right side of the page
+        justify-content: space-between;
+
+        .left{
+
+            // show the left side
+            display: flex;
+            align-items: center;
+
+            .logo{
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;  // removes the underline in the link for the name
+                
+                // inherit the color from the topbar main color parameters above
+                color: inherit;
+                margin-right: 40px;
+            }
+
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+
+
+                .githubIcon{
+                    font-size: 35px;
+                    margin-right: 5px;
+                }
+
+                .linkedinIcon{
+                    font-size: 45px;
+                    margin-right: 2px;
+                }
+
+                .social{
+                    text-decoration: none; 
+                    font-weight: 600;
+                    color: inherit;
+                }
+
+            }
+        }
+
+    }
+}

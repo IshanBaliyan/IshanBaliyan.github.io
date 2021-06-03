@@ -1,0 +1,35 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        /* Need to keep the topbar visible*/
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+
+        /* If you click a link in the topbar, e.g. the intro component hyperlink, you
+        should not teloport, but smoothly move there with a similar auto-scrolling behaviour.
+        This also makes snap scrolling slower, smoother and more natural. */
+        scroll-behavior: smooth;
+
+        // Snaps the scrolling to the nearest component (i.e. colour section)
+        scroll-snap-type: y mandatory;
+
+        scrollbar-width: none; // for firefox
+        &::-webkit-scrollbar{
+            display: none; // for chrome, and etc...
+        }
+
+        > *{
+            /* Makes EACH (meaning of "*") component take up it's full height and section
+            on the page */
+            width: 100vw;
+            height: calc(100vh - 70px);
+
+            /* Makes you align your snap to each (closest) component */
+            scroll-snap-align: start;
+        }
+    }
+}
