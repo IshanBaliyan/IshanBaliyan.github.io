@@ -33,13 +33,8 @@ export default function Topbar() {
                         <a href={"https://github.com/IshanBaliyan"} className="social">GitHub</a>
                     </div>
                     <div className="itemContainer">
-                        <ListAlt className="githubIcon"/>
-                        {/* ReactPDF.render(<MyDocument />, "official_full_ishan_baliyan_website\Official_Reviewed_Resume_Waterloo_June_2021.pdf"); */}
-                        
-                        {/* <Link href={require("./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf")} target="blank">Resume</Link> */}
-                        {/* <a href="./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf" download>Resume</a> */}
-
-                        <a href={Pdf} target = "_blank" download>Resume</a>
+                        <ListAlt className="resumeIcon"/>
+                        <a href={Pdf} target = "_blank" className="resumeInfo" download>Resume</a>
 
                     </div>
                 </div>
