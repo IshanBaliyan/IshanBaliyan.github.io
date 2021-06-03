@@ -36,7 +36,7 @@ export default function Topbar() {
                         {/* ReactPDF.render(<MyDocument />, "official_full_ishan_baliyan_website\Official_Reviewed_Resume_Waterloo_June_2021.pdf"); */}
                         
                         {/* <Link href={require("./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf")} target="blank">Resume</Link> */}
-                        <a href="./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf" download>Document</a>
+                        <a href="./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf" download>Resume</a>
                     </div>
                 </div>
                 <div className="right"></div>
