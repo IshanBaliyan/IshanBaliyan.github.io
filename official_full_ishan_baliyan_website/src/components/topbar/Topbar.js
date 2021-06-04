@@ -13,14 +13,16 @@ import {LinkedIn, GitHub, ListAlt} from '@material-ui/icons';
 
 // school (although you should use that one elsewhere)
 
-import Pdf from "./myDocument/Official_Reviewed_Resume_Waterloo_June_2021.pdf";
+import Pdf from "./res/Official_Reviewed_Resume_Waterloo_June_2021.pdf";
 
 // TODO Add devpost later
 // TODO Add University of Waterloo Later ("School")
 
-export default function Topbar() {
+// taking setMenuOpen and menuOpen as props from App.js
+export default function Topbar({menuOpen, setMenuOpen}) {
     return (
-        <div className="topbar">
+        // if the menu is open (menuOpen is true), add active to the line, therefore, actively showing the menu
+        <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Ishan Baliyan</a>
@@ -33,12 +35,18 @@ export default function Topbar() {
                         <a href={"https://github.com/IshanBaliyan"} className="social">GitHub</a>
                     </div>
                     <div className="itemContainer">
-                        <ListAlt className="resumeIcon"/>
+                        <a href={Pdf} target = "_blank" className="resumeInfo" download><ListAlt className="resumeIcon"/></a>
                         <a href={Pdf} target = "_blank" className="resumeInfo" download>Resume</a>
-
                     </div>
                 </div>
-                <div className="right"></div>
+                <div className="right">
+                    {/* if they click the three lines, switch the menu from open to close or close to open, i.e. the opposite of the current state */}
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
+                </div>
             </div>
         </div>
     )

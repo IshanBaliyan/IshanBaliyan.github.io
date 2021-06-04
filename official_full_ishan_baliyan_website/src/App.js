@@ -5,11 +5,16 @@ import Experience from "./components/experience/Experience"
 import Interests from "./components/interests/Interests"
 import Contact from "./components/contact/Contact"
 import "./app.scss"
+import { useState } from "react";
 
 function App() {
+
+  // the menu is initially closed
+  const [menuOpen,setMenuOpen] = useState(false);
+
   return (
     <div className="app">
-      <Topbar/>
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Projects/>
