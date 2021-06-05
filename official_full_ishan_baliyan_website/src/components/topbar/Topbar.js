@@ -19,6 +19,7 @@ import Pdf from "./res/Official_Reviewed_Resume_Waterloo_June_2021.pdf";
 // TODO Add University of Waterloo Later ("School")
 
 // taking setMenuOpen and menuOpen as props from App.js
+// you use setMenuOpen as a function, and use menuOpen as a variable
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
         // if the menu is open (menuOpen is true), add active to the line, therefore, actively showing the menu

@@ -4,6 +4,8 @@ import Projects from "./components/projects/Projects"
 import Experience from "./components/experience/Experience"
 import Interests from "./components/interests/Interests"
 import Contact from "./components/contact/Contact"
+import Menu from "./components/menu/Menu"
+
 import "./app.scss"
 import { useState } from "react";
 
@@ -15,6 +17,7 @@ function App() {
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Projects/>

@@ -10,7 +10,12 @@
 
     /* Z-index brings the topbar to the front when scrolling (i.e. it stays
     when you scroll down) */
-    z-index: 2;
+
+    // it is at index 3 to make it above the menu bar, which is on index 2
+    z-index: 3;
+
+    // takes 1 sec to make the change slowly, like an animation
+    transition: all 1s ease;
 
     .wrapper{
 
