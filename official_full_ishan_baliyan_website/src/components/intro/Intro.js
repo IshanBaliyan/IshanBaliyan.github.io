@@ -1,7 +1,23 @@
 import "./intro.scss"
-import {ExpandMore} from '@material-ui/icons';
+import { init } from "ityped";
+import { useEffect, useRef } from "react"
 
 export default function Intro() {
+
+    const textRef = useRef();
+
+    useEffect(() => {
+
+        init(textRef.current, {
+
+            // changing a few default values below. you can customize more features by searching library online
+            showCursor: true, // shows the blinking typing cursor beside the text
+            backDelay: 1500, // delay the typing for 1.5 seconds.
+            backSpeed: 60, // type back speed in milliseconds (changed default value of 50ms)
+            strings: ["Software Programmmer", "Student at UWaterloo CS", "University Researcher", "Skydiver", "former Project Consultant"]
+        });
+    },[])
+        
     return (
         <div className="intro" id="intro">
             <div className="left">
@@ -13,10 +29,10 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hi There, I'm</h2>
                     <h1>Ishan Baliyan</h1>
-                    <h3>I am a <span></span></h3>
+                    <h3>I am a <span ref={textRef}></span></h3>
                 </div>
                 <a href="#projects">
-                    <ExpandMore />
+                    <img src="assets/arrow.png" alt="" />
                 </a>
             </div>
         </div>

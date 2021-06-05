@@ -7,8 +7,8 @@
         overflow: hidden;
 
         .imgContainer{
-            width: 900px;
-            height: 900px;
+            width: 1100px;
+            height: 1100px;
             background-color: rgb(20, 147, 221);
             border-radius: 50%; // makes the sphere around image
             display: flex;
@@ -18,16 +18,12 @@
             
             justify-content: center;
             float: right;
-            
-
 
             img{
                 height: 90%;
                 // margin-left: 40px;
             }
-
         }
-
     }
     .right{
         flex: 0.5; // right side will take up other 50% of width
@@ -42,27 +38,67 @@
             justify-content: center;
 
             h1{
-                font-size: 60px;
+                font-size: 100px;
 
                 // margin is 10px from top/bottom and 0 from left/right
                 margin: 10px 0; // sets margin between other text
             }
             h2{
-                font-size: 35px;
+                font-size: 45px;
             }
             h3{
-                font-size: 30px;
+                font-size: 40px;
+
+                span{
+                    // inherit 30px from h3 above
+                    font-size: inherit;
+                    color: rgb(20, 147, 221);
+                }
+
+                // makes the typing cursor blink. otherwise it would be static like: "|"
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink{
+                    // i.e. when the time is at 50%, 0.5 seconds, do not fade the typing cursor yet. Start fading after 0.5 seconds 
+                    50%{
+                        opacity: 1;
+                    }
+                    // every time the animation reaches 100%, at 1s, make the opacity 0, i.e. invisible
+                    100%{
+                        opacity: 0;
+
+                    }
+                }
+
             }
-            a{
-                position: absolute;
-                bottom: 10px;
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
 
-                font-size: large;
+            // moves the arrow to the middle 40% of the right side (can't do 50% cause of left padding at 50px)
+            left: 40%;
 
+            img{
+                width: 80px;
+
+                // animate every two seconds forever
+                animation: arrowBlink 2s infinite;
             }
 
+            // changes opacity, i.e. invisible, every time you reach the 100% time at every 2 seconds
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
 
         }
+
+
+        
     }
 
 }
