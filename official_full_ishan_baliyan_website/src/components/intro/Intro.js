@@ -14,7 +14,7 @@ export default function Intro() {
             showCursor: true, // shows the blinking typing cursor beside the text
             backDelay: 1500, // delay the typing for 1.5 seconds.
             backSpeed: 60, // type back speed in milliseconds (changed default value of 50ms)
-            strings: ["Software Programmmer", "Student at UWaterloo CS", "University Researcher", "Skydiver", "former Project Consultant"]
+            strings: ["Software Programmer", "Student at UWaterloo CS", "University Researcher", "former Project Consultant"]
         });
     },[])
         
