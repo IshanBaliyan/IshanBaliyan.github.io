@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .intro{
     background-color: white;
     display: flex;
@@ -9,7 +11,7 @@
         .imgContainer{
             width: 1100px;
             height: 1100px;
-            background-color: rgb(20, 147, 221);
+            background-color: $themeColor;
             border-radius: 50%; // makes the sphere around image
             display: flex;
 
@@ -52,7 +54,7 @@
                 span{
                     // inherit 30px from h3 above
                     font-size: inherit;
-                    color: rgb(20, 147, 221);
+                    color: $themeColor;
                 }
 
                 // makes the typing cursor blink. otherwise it would be static like: "|"

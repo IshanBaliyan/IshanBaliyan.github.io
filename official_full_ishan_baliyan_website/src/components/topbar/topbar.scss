@@ -46,7 +46,7 @@
                 margin-right: 40px;
 
                 &:hover{
-                    color: rgb(20, 147, 221);
+                    color: $themeColor;
                 }
             }
 
@@ -82,7 +82,7 @@
                     color: inherit;
 
                     &:hover{
-                        color: rgb(20, 147, 221);
+                        color: $themeColor;
                     }
                 }
 
