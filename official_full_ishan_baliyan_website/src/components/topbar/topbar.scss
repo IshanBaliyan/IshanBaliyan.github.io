@@ -44,6 +44,10 @@
                 // inherit the color from the topbar main color parameters above
                 color: inherit;
                 margin-right: 40px;
+
+                &:hover{
+                    color: rgb(20, 147, 221);
+                }
             }
 
             .itemContainer{
@@ -76,6 +80,10 @@
                     text-decoration: none; 
                     font-weight: 600;
                     color: inherit;
+
+                    &:hover{
+                        color: rgb(20, 147, 221);
+                    }
                 }
 
                 span{

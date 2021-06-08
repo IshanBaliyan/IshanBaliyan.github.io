@@ -28,20 +28,20 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <div className="left">
                     <a href="#intro" className="logo">Ishan Baliyan</a>
                     <div className="itemContainer">
-                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} target="_blank" className="social"><LinkedIn className="linkedinIcon"/></a>
-                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} target="_blank" className="social">LinkedIn</a>
+                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} rel="noreferrer" target="_blank" className="social"><LinkedIn className="linkedinIcon"/></a>
+                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} rel="noreferrer" target="_blank" className="social">LinkedIn</a>
                     </div>
                     <div className="itemContainer">
-                        <a href={"https://github.com/IshanBaliyan"} target="_blank" className="social"><GitHub className="githubIcon"/></a>
-                        <a href={"https://github.com/IshanBaliyan"} target="_blank" className="social">GitHub</a>
+                        <a href={"https://github.com/IshanBaliyan"} rel="noreferrer" target="_blank" rel="noreferrer" className="social"><GitHub className="githubIcon"/></a>
+                        <a href={"https://github.com/IshanBaliyan"} rel="noreferrer" target="_blank" rel="noreferrer" className="social">GitHub</a>
                     </div>
                     <div className="itemContainer">
-                        <a href={Pdf} target = "_blank" target="_blank" className="resumeInfo" download><ListAlt className="resumeIcon"/></a>
-                        <a href={Pdf} target = "_blank" target="_blank" className="resumeInfo" download>Resume</a>
+                        <a href={Pdf} className="social" download><ListAlt className="resumeIcon"/></a>
+                        <a href={Pdf} className="social" download>Resume</a>
                     </div>
                 </div>
                 <div className="right">
-                    {/* if they click the three lines, switch the menu from open to close or close to open, i.e. the opposite of the current state */}
+                    {/* if they click the three lines, switch the menu from open to close or close to open, i.e. the opposite of the current state */} 
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
