@@ -28,16 +28,16 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <div className="left">
                     <a href="#intro" className="logo">Ishan Baliyan</a>
                     <div className="itemContainer">
-                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} className="social"><LinkedIn className="linkedinIcon"/></a>
-                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} className="social">LinkedIn</a>
+                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} target="_blank" className="social"><LinkedIn className="linkedinIcon"/></a>
+                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} target="_blank" className="social">LinkedIn</a>
                     </div>
                     <div className="itemContainer">
-                        <a href={"https://github.com/IshanBaliyan"} className="social"><GitHub className="githubIcon"/></a>
-                        <a href={"https://github.com/IshanBaliyan"} className="social">GitHub</a>
+                        <a href={"https://github.com/IshanBaliyan"} target="_blank" className="social"><GitHub className="githubIcon"/></a>
+                        <a href={"https://github.com/IshanBaliyan"} target="_blank" className="social">GitHub</a>
                     </div>
                     <div className="itemContainer">
-                        <a href={Pdf} target = "_blank" className="resumeInfo" download><ListAlt className="resumeIcon"/></a>
-                        <a href={Pdf} target = "_blank" className="resumeInfo" download>Resume</a>
+                        <a href={Pdf} target = "_blank" target="_blank" className="resumeInfo" download><ListAlt className="resumeIcon"/></a>
+                        <a href={Pdf} target = "_blank" target="_blank" className="resumeInfo" download>Resume</a>
                     </div>
                 </div>
                 <div className="right">
