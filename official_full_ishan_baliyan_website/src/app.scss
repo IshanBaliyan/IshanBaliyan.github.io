@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app{
     height: 100vh;
 
@@ -5,7 +7,7 @@
         width: 100%;
         /* Need to keep the topbar visible*/
         height: calc(100vh - 70px);
-        background-color: lightsalmon;
+        background-color: $themeColor;
         position: relative;
         top: 70px;
 
@@ -30,6 +32,7 @@
 
             /* Makes you align your snap to each (closest) component */
             scroll-snap-align: start;
+
         }
     }
 }
