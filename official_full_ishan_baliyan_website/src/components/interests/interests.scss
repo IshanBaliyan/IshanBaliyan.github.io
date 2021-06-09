@@ -1,3 +1,78 @@
 .interests{
-    background-color: lightcoral;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+    }
+
+    .container{
+        width: 100%;
+        height: 90%; // removes scroll bars, as the height is more suitable
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card{
+            width: 400px;
+            height: 75%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px -8px black; // shadow around the card
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            transition: all 1s ease; // takes a second to do the animation of making the card bigger
+
+            &.featured{
+                width: 400px;
+                height: 75%;
+                margin: 0 60px; // 0 margin from top/bottom and 30px marin from left/right between the cards for space
+            }
+
+            &:hover{
+                transform: scale(1.1); // make the card 1.1x bigger when hovering
+            }
+
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+
+                    &.user{
+                        height: 400px;
+                        width:400px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        
+                    }
+                }
+            }
+
+            .center{
+                padding: 10px;
+                border-radius: 10px;
+                background-color: rgb(215, 228, 235);
+            }
+
+            .bottom{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                h3{
+                    margin-bottom: 5px;
+                }
+                h4{
+                    color: grey;
+                }
+            }
+        }
+    }
 }
