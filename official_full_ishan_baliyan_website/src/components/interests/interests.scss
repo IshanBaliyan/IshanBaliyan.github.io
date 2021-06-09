@@ -7,7 +7,9 @@
     align-items: center;
 
     @include mobile{
-        justify-content: space-around; // helps evely space items inside screen on mobile
+
+        // removing the statement below allowed much more proper margins at the bottom of the page
+        //justify-content: space-around; // helps evely space items inside screen on mobile
         overflow: hidden;
     }
 
@@ -29,7 +31,7 @@
 
         @include mobile{
             flex-direction: column; // display the info in a vertical format for mobile
-            height: 100%; // expand height to full page
+            height: 85%; // expand height to full page
             overflow: hidden;
         }
 

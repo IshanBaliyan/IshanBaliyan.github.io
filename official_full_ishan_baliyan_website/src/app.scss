@@ -12,7 +12,9 @@
         top: 70px;
 
         @include mobile{
-            bottom: 0px;
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         /* If you click a link in the topbar, e.g. the intro component hyperlink, you

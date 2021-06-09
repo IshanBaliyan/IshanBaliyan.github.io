@@ -8,9 +8,10 @@
 
         /*if it is a mobile (it checks if the screen is a mobile through the mobile function that checks the
         width of the screen in the global scss file), then flex the screen info vertically */
-
+        overflow: hidden;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .left{
@@ -32,6 +33,7 @@
 
             @include mobile{
                 align-items: flex-start;
+                overflow: hidden;
             }
 
             img{
@@ -47,6 +49,10 @@
         flex: 0.5; // right side will take up other 50% of width
         position: relative; // since the arrow will be absolute in it's position, the parent element must be relative
 
+        @include mobile{
+            padding-top: 20px;
+        }
+        
         .wrapper{
             width: 100%;
             height: 100%;
@@ -58,6 +64,8 @@
             @include mobile{
                 padding-left: 0; // removes left side padding on mobile
                 align-items: center;
+                justify-content:start;
+                padding-top: 0px;
             }
 
             h1{
@@ -112,6 +120,17 @@
             position: absolute;
             bottom: 10px;
 
+            @include mobile{
+                bottom: 3rem;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                justify-content: center;
+                position: absolute;
+            }
+
             // moves the arrow to the middle 40% of the right side (can't do 50% cause of left padding at 50px)
             left: 40%;
 
@@ -119,7 +138,7 @@
                 width: 80px;
 
                 @include mobile{
-                    width: 40px; // smaller arrow on mobile
+                    width: 50px; // smaller arrow on mobile
                 }
 
                 // animate every two seconds forever

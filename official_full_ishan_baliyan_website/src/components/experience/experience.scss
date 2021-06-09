@@ -35,7 +35,7 @@
         transition: all 1s ease-out;
 
         @include mobile{
-            height: 100%; // covers full mobile screen height
+            height: 85%; // covers full mobile screen height
             flex-direction: column; // let the info expand vertically on mobile. must scroll down to see the slides on mobile
             justify-content: center;
         }
