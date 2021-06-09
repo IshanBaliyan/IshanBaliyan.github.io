@@ -46,7 +46,7 @@ export default function Interests() {
                             {d.desc}
                         </div>
                     <div className="bottom">
-                        <h1>{d.name}</h1>
+                        <h3>{d.name}</h3>
                         <h4>{d.title}</h4>
                     </div>
                 </div>

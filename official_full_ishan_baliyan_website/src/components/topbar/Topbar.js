@@ -29,15 +29,15 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <a href="#intro" className="logo">Ishan Baliyan</a>
                     <div className="itemContainer">
                         <a href={"https://www.linkedin.com/in/ishan-baliyan"} rel="noreferrer" target="_blank" className="social"><LinkedIn className="linkedinIcon"/></a>
-                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} rel="noreferrer" target="_blank" className="social">LinkedIn</a>
+                        <a href={"https://www.linkedin.com/in/ishan-baliyan"} rel="noreferrer" target="_blank" className="social"><div className="notForMobileText">LinkedIn</div></a>
                     </div>
                     <div className="itemContainer">
                         <a href={"https://github.com/IshanBaliyan"} rel="noreferrer" target="_blank" rel="noreferrer" className="social"><GitHub className="githubIcon"/></a>
-                        <a href={"https://github.com/IshanBaliyan"} rel="noreferrer" target="_blank" rel="noreferrer" className="social">GitHub</a>
+                        <a href={"https://github.com/IshanBaliyan"} rel="noreferrer" target="_blank" rel="noreferrer" className="social"><div className="notForMobileText">GitHub</div></a>
                     </div>
                     <div className="itemContainer">
                         <a href={Pdf} className="social" download><ListAlt className="resumeIcon"/></a>
-                        <a href={Pdf} className="social" download>Resume</a>
+                        <a href={Pdf} className="social" download><div className="notForMobileText">Resume</div></a>
                     </div>
                 </div>
                 <div className="right">

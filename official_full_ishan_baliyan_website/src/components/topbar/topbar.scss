@@ -45,6 +45,11 @@
                 color: inherit;
                 margin-right: 40px;
 
+                @include mobile{
+                    margin-right: 5px;  // lower margins
+                    font-size: 30px; // lower size of the main Ishan Baliyan title at the top. gives more space on mobile screen.
+                }
+
                 &:hover{
                     color: $themeColor;
                 }
@@ -53,21 +58,39 @@
             .itemContainer{
                 display: flex;
                 align-items: center;
-                margin-left: 30px;
+                
+                margin: 5px;
+
+                @include mobile{
+                    margin-left: 0px;  // lower margins
+                    margin: 0;
+                }
 
                 .githubIcon{
                     font-size: 35px;
                     margin-right: 5px;
+
+                    @include mobile{
+                        display: none; // do not display the github icon on mobile
+                    }
                 }
 
                 .linkedinIcon{
                     font-size: 45px;
                     margin-right: 2px;
+                    @include mobile{
+                        font-size: 30px; // make the icon smaller
+                    }
                 }
 
                 .resumeIcon{
                     font-size: 45px;
                     margin-right: 2px;
+
+                    @include mobile{
+                        font-size: 30px; // make the icon smaller
+                    }
+                    
                 }
 
                 .resumeInfo{
@@ -80,6 +103,12 @@
                     text-decoration: none; 
                     font-weight: 600;
                     color: inherit;
+                    
+                    .notForMobileText{
+                        @include mobile{
+                            display: none; // do not display the info at the top when on mobile
+                        }
+                    }
 
                     &:hover{
                         color: $themeColor;

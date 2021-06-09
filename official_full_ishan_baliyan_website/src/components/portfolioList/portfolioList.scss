@@ -7,6 +7,10 @@
     border-radius: 10px;
     cursor: pointer; // changes the mouse cursor to pointer finger when hovering over the list items
 
+    @include mobile{
+        margin-right: 10px;
+    }
+
     &.active{
         background-color: $mainColor;
         color: white;

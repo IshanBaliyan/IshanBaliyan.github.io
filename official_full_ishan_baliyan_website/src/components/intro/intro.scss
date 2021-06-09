@@ -4,6 +4,15 @@
     background-color: white;
     display: flex;
 
+    @include mobile{
+
+        /*if it is a mobile (it checks if the screen is a mobile through the mobile function that checks the
+        width of the screen in the global scss file), then flex the screen info vertically */
+
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left{
         flex: 0.5; // left side will take up 50% of width
         overflow: hidden;
@@ -21,9 +30,16 @@
             justify-content: center;
             float: right;
 
+            @include mobile{
+                align-items: flex-start;
+            }
+
             img{
                 height: 90%;
-                // margin-left: 40px;
+                
+                @include mobile{
+                    height: 50%; // makes image smaller on mobile
+                }
             }
         }
     }
@@ -39,17 +55,30 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile{
+                padding-left: 0; // removes left side padding on mobile
+                align-items: center;
+            }
+
             h1{
                 font-size: 100px;
 
                 // margin is 10px from top/bottom and 0 from left/right
                 margin: 10px 0; // sets margin between other text
+
+                @include mobile{
+                    font-size: 40px;
+                }
             }
             h2{
                 font-size: 45px;
             }
             h3{
                 font-size: 40px;
+
+                @include mobile{
+                    font-size: 20px;
+                }
 
                 span{
                     // inherit 30px from h3 above
@@ -85,6 +114,10 @@
 
             img{
                 width: 80px;
+
+                @include mobile{
+                    width: 40px; // smaller arrow on mobile
+                }
 
                 // animate every two seconds forever
                 animation: arrowBlink 2s infinite;

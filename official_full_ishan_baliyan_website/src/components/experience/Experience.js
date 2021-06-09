@@ -72,7 +72,7 @@ export default function Experience() {
                                 <p>
                                     {data.desc}
                                 </p>
-                                <span>Projects</span>
+                                <span>Experience</span>
                             </div>
                         </div>
                         <div className="right">

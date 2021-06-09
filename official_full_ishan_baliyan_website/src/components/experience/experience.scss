@@ -8,6 +8,10 @@
     position: relative; // absolute position for the left and right arrows, so parent must be relative
 
     .arrow{
+
+        @include mobile{
+            display: none; // remove the arrows on mobile
+        }
         height: 90px;
         position: absolute;
         cursor: pointer;
@@ -30,6 +34,12 @@
         left: 0;
         transition: all 1s ease-out;
 
+        @include mobile{
+            height: 100%; // covers full mobile screen height
+            flex-direction: column; // let the info expand vertically on mobile. must scroll down to see the slides on mobile
+            justify-content: center;
+        }
+
         .container{
             width: 100vw; // contain the whole screen
             display: flex;
@@ -45,14 +55,24 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile{
+                    width: 90%;
+                    height: 100px; // lowers height to fit all the slides on one page for mobile
+                    margin: 5px 0; // margin 5px top/bottom and 0 left/right
+                }
+
                 // splitting screen into 4 pieces on left and 8 pieces on right (# of flex is # of sections)
                 .left{
-                    flex: 4;
+                    flex: 4; // proportion of left to right. i.e., left side is flex of 4 and right side is 8, so 4:8 screen proportion
                     height: 80%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
+
+                    @include mobile{
+                        flex: 5; // readjust so that the text is bigger and the images are smaller (flex of left side is 5 and right side is 5)
+                    }
 
                     .leftContainer{
                         padding: 30px;
@@ -62,6 +82,10 @@
                         flex-direction: column;
                         justify-content: space-between;
 
+                        @include mobile{
+                            width: 100%;
+                        }
+
                         .imgContainer{
                             width: 100px;
                             height: 100px;
@@ -70,6 +94,9 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            @include mobile{
+                                display: none; // do not display small icons for experience on mobile
+                            }
 
                             img{
                                 width: 60px;
@@ -78,16 +105,27 @@
 
                         h2{
                             font-size: 30px;
+                            @include mobile{
+                                font-size: 12px;
+                            }
                         }
 
                         p{
                             font-size: 20px;
+                            @include mobile{
+                                display: none;
+                            }
                         }
                         span{
-                            font-size: 15px;
+                            font-size: 20px;
                             font-weight: 600;
                             text-decoration: underline;
                             cursor: pointer;
+                            color: $themeColor;
+
+                            @include mobile{
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -98,10 +136,20 @@
                     align-items: center;
                     justify-content: center;
 
+                    @include mobile{
+                        flex: 5; // 5 flex on left and 5 flex on right, so the text is larger and images are smaller on mobile
+                    }
+
                     img{
                         width: 500px;
+                        
                         overflow: hidden;
                         transform: rotate(5deg);
+
+                        @include mobile{
+                            width: 110px;
+                            transform: rotate(0deg);
+                        }
                     }
                 }
 
