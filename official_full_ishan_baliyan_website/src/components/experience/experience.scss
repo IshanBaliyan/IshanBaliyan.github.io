@@ -45,6 +45,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
 
             .item{
                 width: 950px;
@@ -59,6 +60,7 @@
                     width: 90%;
                     height: 100px; // lowers height to fit all the slides on one page for mobile
                     margin: 5px 0; // margin 5px top/bottom and 0 left/right
+                    overflow: hidden;
                 }
 
                 // splitting screen into 4 pieces on left and 8 pieces on right (# of flex is # of sections)
@@ -71,7 +73,7 @@
                     overflow: hidden;
 
                     @include mobile{
-                        flex: 5; // readjust so that the text is bigger and the images are smaller (flex of left side is 5 and right side is 5)
+                        flex: 6; // readjust so that the text is bigger and the images are smaller (flex of left side is 5 and right side is 5)
                     }
 
                     .leftContainer{
@@ -84,6 +86,7 @@
 
                         @include mobile{
                             width: 100%;
+                            padding: 10px;
                         }
 
                         .imgContainer{
@@ -137,7 +140,8 @@
                     justify-content: center;
 
                     @include mobile{
-                        flex: 5; // 5 flex on left and 5 flex on right, so the text is larger and images are smaller on mobile
+                        flex: 4; // 5 flex on left and 5 flex on right, so the text is larger and images are smaller on mobile
+                        padding: 5px;
                     }
 
                     img{
