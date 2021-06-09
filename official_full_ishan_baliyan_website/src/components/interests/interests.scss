@@ -31,7 +31,7 @@
 
         @include mobile{
             flex-direction: column; // display the info in a vertical format for mobile
-            height: 85%; // expand height to full page
+            height: 80%; // expand height to full page
             overflow: hidden;
         }
 

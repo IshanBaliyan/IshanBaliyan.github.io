@@ -49,6 +49,11 @@
             align-items: center;
             justify-content: space-around;
 
+            @include mobile{
+                justify-content:unset;
+                margin: 10px;
+            }
+
             input{
                 width: 600px;
                 height: 30px;
@@ -68,6 +73,7 @@
                 @include mobile{
                     width: 80%;
                     height: 20%;
+                    margin: 10px;
                 }
             }
 

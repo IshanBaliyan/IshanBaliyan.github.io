@@ -7,6 +7,12 @@
     justify-content: center;
     position: relative; // absolute position for the left and right arrows, so parent must be relative
 
+    @include mobile{
+        padding-top: 5px;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+
     .arrow{
 
         @include mobile{
@@ -35,7 +41,7 @@
         transition: all 1s ease-out;
 
         @include mobile{
-            height: 85%; // covers full mobile screen height
+            height: 80%; // covers full mobile screen height
             flex-direction: column; // let the info expand vertically on mobile. must scroll down to see the slides on mobile
             justify-content: center;
         }
