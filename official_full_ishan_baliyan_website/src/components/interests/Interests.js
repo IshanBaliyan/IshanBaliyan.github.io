@@ -24,7 +24,7 @@ export default function Interests() {
             name: "Puzzles",
             title: "Rubik's cube, reading, and chess",
             img: "assets/interestsInfo/interest_rubik_cube.jpg",
-            desc: "For fun, I like to solve Rubik's cubes, with a personal best of solving the 3x3 at 10 seconds, and an average of 25 seconds. I also like reading, and I'm a novice at chess.",
+            desc: "For fun, I like to solve Rubik's cubes, with a personal best of solving the 3x3 at 10 seconds and an average of 25 seconds. I also like reading, and I'm a novice at chess.",
         },
     ];
 
