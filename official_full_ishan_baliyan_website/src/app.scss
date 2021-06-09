@@ -11,6 +11,10 @@
         position: relative;
         top: 70px;
 
+        @include mobile{
+            bottom: 0px;
+        }
+
         /* If you click a link in the topbar, e.g. the intro component hyperlink, you
         should not teloport, but smoothly move there with a similar auto-scrolling behaviour.
         This also makes snap scrolling slower, smoother and more natural. */
