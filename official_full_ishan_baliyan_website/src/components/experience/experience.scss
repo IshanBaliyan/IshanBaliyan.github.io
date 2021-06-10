@@ -23,18 +23,18 @@
         cursor: pointer;
 
         &.left{
-            left: 150px;
+            left: 10px; // previously 150px
             transform: rotate(90deg);
         }
 
         &.right{
-            right: 150px;
+            right: 10px; // previously 150px
             transform: rotate(-90deg);
         }
     }
 
     .slider{
-        height: 600px;
+        height: 70vh; // previously 600px
         display: flex;
         position: absolute;
         left: 0;
@@ -54,7 +54,7 @@
             overflow: hidden;
 
             .item{
-                width: 950px;
+                width: 70%; // previously 950px
                 height: 100%;
                 background-color: white;
                 border-radius: 20px;
@@ -113,14 +113,14 @@
                         }
 
                         h2{
-                            font-size: 30px;
+                            font-size: 2vw; // previously 30px
                             @include mobile{
                                 font-size: 12px;
                             }
                         }
 
                         p{
-                            font-size: 20px;
+                            font-size: 1.5vw; // previously 20px
                             @include mobile{
                                 display: none;
                             }
@@ -151,7 +151,7 @@
                     }
 
                     img{
-                        width: 500px;
+                        width: 80%; // previously 500px
                         
                         overflow: hidden;
                         transform: rotate(5deg);

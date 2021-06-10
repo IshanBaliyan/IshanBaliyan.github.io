@@ -7,7 +7,7 @@
     align-items: center;
 
     h1{
-        font-size: 70px;
+        font-size: 5vw; // previously 70px
 
         @include mobile{
             font-size: 20px;
@@ -41,8 +41,8 @@
         .item{
             // width: 220px; suggested sizing
             // height: 150px; suggested sizing
-            width:400px; // personally, better suited dimensions
-            height: 290px; // peronally, better suited dimensions
+            width:25%; // previously 400px
+            height: 40%; // previously 290px
             overflow-y: hidden; // personally added this as this removed the scroll bars
             border-radius: 20px;
             border: 1px solid #f0efef; // 1px light grey solfid border for the items
