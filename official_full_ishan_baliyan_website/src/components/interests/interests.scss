@@ -32,8 +32,9 @@
 
         @include mobile{
             flex-direction: column; // display the info in a vertical format for mobile
-            height: 80%; // expand height to full page
+            height: 90%; // expand height to full page
             overflow: hidden;
+            justify-content: unset;
         }
 
         .card{
@@ -49,10 +50,14 @@
             margin: 30px;
 
             @include mobile{
-                height: 165px;
-                width: 85%;
-                padding: 10px;
+                height: 28%; // previously 165px
+                width: 92%;
+                padding: 5px;
                 overflow: hidden;
+                margin: 0px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                justify-content: unset;
             }
 
             &.featured{
@@ -63,9 +68,12 @@
                 @include mobile{
 
                     // make the height/width the same for the featured card as the other cards on mobile
-                     height: 165px; 
-                     width: 85%;
+                     height: 28%; // previously 165px
+                     width: 92%;
                      margin: 0px;
+                     padding: 5px;
+                     padding-bottom: 0;
+                     margin-bottom: 0;
                      overflow: hidden;
                 }
             }
@@ -103,7 +111,7 @@
                 background-color: rgb(215, 228, 235);
 
                 @include mobile{
-                    font-size: 2vh;
+                    font-size: 1.8vh;
                 }
             }
 
