@@ -87,11 +87,15 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile{
+                   overflow: hidden;
+                }
+
                 img{
 
                     &.user{
-                        height: 18vw; // previously 400px
-                        width: 18vw; // previously 400px
+                        height: 15vw; // previously 400px
+                        width: 15vw; // previously 400px
                         margin: 10px;
                         border-radius: 50%;
                         object-fit: cover;
@@ -112,6 +116,7 @@
 
                 @include mobile{
                     font-size: 1.8vh;
+                    overflow: hidden;
                 }
             }
 
@@ -120,6 +125,10 @@
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
+
+                @include mobile{
+                    overflow: hidden;
+                }
 
                 h3{
                     font-size: 2vw; // previously 50px
