@@ -92,11 +92,13 @@ export default function Projects() {
                 {/* shows all item images and titles for the current chosen submenu (e.g. featured, mobile, web, etc...). setData is used in useEffect() to change the shown data (projects) */}
                 {data.map((data)=>(
                 <div className="item">
-                    <img
-                        src={data.img}
-                        alt=""
-                    />
-                    <h3>{data.title}</h3>
+                    <a href={data.url} rel="noreferrer" target="_blank" rel="noreferrer">
+                            <img
+                                src={data.img}
+                                alt=""
+                            />
+                            <h3>{data.title}</h3>
+                    </a>
                 </div>
                 ))}
             </div>
