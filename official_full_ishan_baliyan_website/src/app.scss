@@ -10,13 +10,14 @@
         background-color: $themeColor;
         position: relative;
         top: 70px;
+        bottom: 0; // added to remove bottom portions
 
         @include mobile{
             bottom: 0;
             margin-bottom: 0;
             padding-bottom: 0;
-            height: calc(100vh - 60px);
-            top: 60px;
+            height: calc(100vh - 70px);
+            top: 70px;
         }
 
         /* If you click a link in the topbar, e.g. the intro component hyperlink, you
@@ -28,6 +29,7 @@
         scroll-snap-type: y mandatory;
 
         scrollbar-width: none; // for firefox
+        
         &::-webkit-scrollbar{
             display: none; // for chrome, and etc...
         }
@@ -36,9 +38,9 @@
             /* Makes EACH (meaning of "*") component take up it's full height and section
             on the page */
             width: 100vw;
-            height: calc(100vh - 60px);
+            height: calc(100vh - 70px);
             @include mobile{
-                height: calc(100vh - 60px);
+                height: calc(100vh - 70px);
             }
 
             /* Makes you align your snap to each (closest) component */
