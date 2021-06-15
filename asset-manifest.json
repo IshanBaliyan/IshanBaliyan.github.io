@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.13d86656.chunk.css",
+    "main.css": "/static/css/main.0ea6fa60.chunk.css",
     "main.js": "/static/js/main.e62ec3e8.chunk.js",
     "main.js.map": "/static/js/main.e62ec3e8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.04aa2084.js",
@@ -8,14 +8,14 @@
     "static/js/2.70130e3f.chunk.js": "/static/js/2.70130e3f.chunk.js",
     "static/js/2.70130e3f.chunk.js.map": "/static/js/2.70130e3f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.13d86656.chunk.css.map": "/static/css/main.13d86656.chunk.css.map",
+    "static/css/main.0ea6fa60.chunk.css.map": "/static/css/main.0ea6fa60.chunk.css.map",
     "static/js/2.70130e3f.chunk.js.LICENSE.txt": "/static/js/2.70130e3f.chunk.js.LICENSE.txt",
     "static/media/Official_Reviewed_Resume_Waterloo_June_2021.a3d2136c.pdf": "/static/media/Official_Reviewed_Resume_Waterloo_June_2021.a3d2136c.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.04aa2084.js",
     "static/js/2.70130e3f.chunk.js",
-    "static/css/main.13d86656.chunk.css",
+    "static/css/main.0ea6fa60.chunk.css",
     "static/js/main.e62ec3e8.chunk.js"
   ]
 }
