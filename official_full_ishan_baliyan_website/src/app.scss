@@ -3,49 +3,56 @@
 .app{
     height: 100vh;
 
-    .sections{
-        width: 100%;
-        /* Need to keep the topbar visible*/
-        height: calc(100vh - 70px);
-        background-color: $themeColor;
-        position: relative;
-        top: 70px;
-        bottom: 0; // added to remove bottom portions
-
-        @include mobile{
-            bottom: 0;
-            margin-bottom: 0;
-            padding-bottom: 0;
+    /* Adding this scroll container solves a crucial problem in the website for chrome users with a scroll wheel (bug on chrome side) for scroll-snap-type: y mandatory;.
+     Before, the website was skipping elements, but it stopped ater adding this container. Nonetheless, the scrolling was pretty wonky, so it was removed for the sake
+     of the website being more supportive for all browsers/devices. The scroller has therefore been changed to scroll-snap-type: y proximity; for proximity scrolling only*/
+        .sections{
+            width: 100%;
+            /* Need to keep the topbar visible*/
             height: calc(100vh - 70px);
-            top: 70px;
-        }
+            background-color: $themeColor;
+            position: relative;
+            top: 70px; // Normally, this would be at 70px, without the scroll container existing
+            bottom: 0; // added to remove bottom portions
+            overflow-y: scroll;
 
-        /* If you click a link in the topbar, e.g. the intro component hyperlink, you
-        should not teloport, but smoothly move there with a similar auto-scrolling behaviour.
-        This also makes snap scrolling slower, smoother and more natural. */
-        scroll-behavior: smooth;
-
-        // Snaps the scrolling to the nearest component (i.e. colour section)
-        scroll-snap-type: y mandatory;
-
-        scrollbar-width: none; // for firefox
-        
-        &::-webkit-scrollbar{
-            display: none; // for chrome, and etc...
-        }
-
-        > *{
-            /* Makes EACH (meaning of "*") component take up it's full height and section
-            on the page */
-            width: 100vw;
-            height: calc(100vh - 70px);
             @include mobile{
+                bottom: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
                 height: calc(100vh - 70px);
+                top: 70px;
             }
 
-            /* Makes you align your snap to each (closest) component */
-            scroll-snap-align: start;
+            /* If you click a link in the topbar, e.g. the intro component hyperlink, you
+            should not teloport, but smoothly move there with a similar auto-scrolling behaviour.
+            This also makes snap scrolling slower, smoother and more natural. */
+            scroll-behavior: smooth;
+            
+            // Snaps the scrolling to the nearest component (i.e. colour section)
+            scroll-snap-type: y proximity;
 
+            scrollbar-width: none; // for firefox
+
+            &::-webkit-scrollbar{
+                display: none; // for chrome, and etc...
+            }
+
+            > *{
+                /* Makes EACH (meaning of "*") component take up it's full height and section
+                on the page */
+                width: 100vw;
+                height: calc(100vh - 70px);
+                @include mobile{
+                    height: calc(100vh - 70px);
+                }
+
+                /* Makes you align your snap to each (closest) component */
+                scroll-snap-align: start;
+
+                scroll-snap-stop: always;
+                -webkit-overflow-scrolling: touch; // suggested for ios touch-screen devices
+
+            }
         }
-    }
 }
