@@ -19,9 +19,9 @@
         },
         {
             id: 4,
-            title: "In progress...",
-            img: "assets/portfolio_gear_one.jpeg",
-            url: "https://github.com/IshanBaliyan",
+            title: "This Personal Website",
+            img: "assets/portfolio_personal_website_example.png",
+            url: "https://github.com/IshanBaliyan/IshanBaliyan.github.io",
         },
         {
             id: 5,
