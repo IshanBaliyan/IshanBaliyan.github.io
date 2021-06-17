@@ -13,7 +13,7 @@ import {LinkedIn, GitHub, ListAlt} from '@material-ui/icons';
 
 // school (although you should use that one elsewhere)
 
-import Pdf from "./res/Official_Reviewed_Resume_Waterloo_June_2021.pdf";
+import Pdf from "./res/ishan_baliyan_personal_website_resume.pdf";
 
 // TODO Add devpost later
 // TODO Add University of Waterloo Later ("School")
