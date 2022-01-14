@@ -32,11 +32,11 @@ export default function Projects() {
         },
         {
             id: "mobile",
-            title: "Mobile App",
+            title: "Design App",
         },
         {
             id: "design",
-            title: "Design",
+            title: "Games",
         },
         {
             id: "content",
