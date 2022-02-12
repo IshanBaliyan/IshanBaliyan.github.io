@@ -7,33 +7,33 @@
         },
         {
             id: 2,
-            title: "Travel React App",
-            img: "assets/portfolio_travel_app.png",
-            url: "https://github.com/IshanBaliyan/TravelApp",
+            title: "E-commerce Storify App",
+            img: "assets/portfolio_storify_app.png",
+            url: "https://github.com/IshanBaliyan/storify",
         },
         {
             id: 3,
-            title: "This Personal Website",
-            img: "assets/portfolio_personal_website_example.png",
-            url: "https://github.com/IshanBaliyan/IshanBaliyan.github.io",
-        },
-        {
-            id: 4,
-            title: "Donkey Kong Java Game",
-            img: "assets/portfolio_donkey_kong_example.png",
-            url: "https://github.com/IshanBaliyan/DonkeyKong",
-        },
-        {
-            id: 5,
             title: "Google CSSI Final Project",
             img: "assets/portfolio_google_cssi.jpeg",
             url: "https://github.com/AndreSlavescu/Number-Game",
         },
         {
-            id: 6,
+            id: 4,
+            title: "Travel React App",
+            img: "assets/portfolio_travel_app.png",
+            url: "https://github.com/IshanBaliyan/TravelApp",
+        },
+        {
+            id: 5,
             title: "Resella Java Webscraper",
             img: "assets/portfolio_resella_logo.png",
             url: "https://github.com/IshanBaliyan/Resella",
+        },
+        {
+            id: 6,
+            title: "This Personal Website",
+            img: "assets/portfolio_personal_website_example.png",
+            url: "https://github.com/IshanBaliyan/IshanBaliyan.github.io",
         },
     ];
 
@@ -52,9 +52,9 @@
         },
         {
             id: 3,
-            title: "Travel React App",
-            img: "assets/portfolio_travel_app.png",
-            url: "https://github.com/IshanBaliyan/TravelApp",
+            title: "Google CSSI Final Project",
+            img: "assets/portfolio_google_cssi.jpeg",
+            url: "https://github.com/AndreSlavescu/Number-Game",
         },
         {
             id: 4,
@@ -64,15 +64,15 @@
         },
         {
             id: 5,
-            title: "Google CSSI Final Project",
-            img: "assets/portfolio_google_cssi.jpeg",
-            url: "https://github.com/AndreSlavescu/Number-Game",
+            title: "Travel React App",
+            img: "assets/portfolio_travel_app.png",
+            url: "https://github.com/IshanBaliyan/TravelApp",
         },
         {
             id: 6,
-            title: "In progress...",
-            img: "assets/portfolio_gear_three.jpeg",
-            url: "https://github.com/IshanBaliyan",
+            title: "E-commerce Storify App",
+            img: "assets/portfolio_storify_app.png",
+            url: "https://github.com/IshanBaliyan/storify",
         },
     ];
 

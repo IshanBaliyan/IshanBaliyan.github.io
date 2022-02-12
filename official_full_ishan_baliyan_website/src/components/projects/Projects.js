@@ -1,12 +1,11 @@
 import "./projects.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import PortfolioList from "../portfolioList/PortfolioList"
 import {featuredPortfolio, 
         webPortfolio, 
         mobilePortfolio, 
         designPortfolio, 
         contentPortfolio} from "../../data"
-
 
 export default function Projects() {
 
