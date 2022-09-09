@@ -1,15 +1,15 @@
     export const featuredPortfolio = [
         {
             id: 1,
-            title: "EngHack Hackathon Winner",
-            img: "assets/portfolio_piggybank.png",
-            url: "https://github.com/AbhiJ2706/enghack2021",
-        },
-        {
-            id: 2,
             title: "E-commerce Storify App",
             img: "assets/portfolio_storify_app.png",
             url: "https://github.com/IshanBaliyan/storify",
+        },
+        {
+            id: 2,
+            title: "EngHack Hackathon Winner",
+            img: "assets/portfolio_piggybank.png",
+            url: "https://github.com/AbhiJ2706/enghack2021",
         },
         {
             id: 3,
@@ -46,15 +46,15 @@
         },
         {
             id: 2,
-            title: "EngHack Hackathon Winner",
-            img: "assets/portfolio_piggybank.png",
-            url: "https://github.com/AbhiJ2706/enghack2021",
-        },
-        {
-            id: 3,
             title: "Google CSSI Final Project",
             img: "assets/portfolio_google_cssi.jpeg",
             url: "https://github.com/AndreSlavescu/Number-Game",
+        },
+        {
+            id: 3,
+            title: "EngHack Hackathon Winner",
+            img: "assets/portfolio_piggybank.png",
+            url: "https://github.com/AbhiJ2706/enghack2021",
         },
         {
             id: 4,

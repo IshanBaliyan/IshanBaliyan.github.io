@@ -34,11 +34,12 @@
     }
 
     .slider{
-        height: 70vh; // previously 600px
+        height: 80vh; // previously 600px
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
+        overflow: hidden;
 
         @include mobile{
             height: 80%; // covers full mobile screen height
@@ -55,7 +56,7 @@
 
             .item{
                 width: 70%; // previously 950px
-                height: 100%;
+                height: 90%;
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
@@ -71,8 +72,8 @@
 
                 // splitting screen into 4 pieces on left and 8 pieces on right (# of flex is # of sections)
                 .left{
-                    flex: 4; // proportion of left to right. i.e., left side is flex of 4 and right side is 8, so 4:8 screen proportion
-                    height: 80%;
+                    flex: 8; // proportion of left to right. i.e., left side is flex of 4 and right side is 8, so 4:8 screen proportion
+                    height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -122,17 +123,26 @@
                             }
                         }
 
-                        p{
-                            font-size: 1.5vw; // previously 20px
+                        h3{
+                            font-size: 1.5vw; // previously 30px
                             overflow: hidden;
+                            @include mobile{
+                                font-size: 16px;
+                            }
+                        }
+
+                        p{
+                            font-size: 1.1em; // previously 20px
+                            overflow: hidden;
+                            white-space: pre-line;
                             @include mobile{
                                 display: none;
                             }
                         }
                         span{
-                            font-size: 20px;
+                            font-size: 1.5vw;
                             font-weight: 600;
-                            text-decoration: underline;
+                            
                             cursor: pointer;
                             color: $themeColor;
                             overflow: hidden;
@@ -144,7 +154,7 @@
                     }
                 }
                 .right{
-                    flex: 8;
+                    flex: 5;
                     height: 100%;
                     display: flex;
                     align-items: center;
@@ -158,10 +168,9 @@
 
                     img{
                         width: 80%; // previously 500px
-                        
-                        overflow: hidden;
                         transform: rotate(5deg);
                         overflow: hidden;
+                        padding-right: 2rem;
 
                         @include mobile{
                             width: 110px;
