@@ -1,5 +1,6 @@
 import "./projects.scss";
-import { useEffect, useState} from "react";
+import { init } from "ityped";
+import { useEffect, useState, useRef} from "react";
 import PortfolioList from "../portfolioList/PortfolioList"
 import {featuredPortfolio, 
         webPortfolio, 
@@ -9,7 +10,21 @@ import {featuredPortfolio,
 
 export default function Projects() {
 
-    /* THIS is important understanf the two lines below for setting const. Basically, what is happening is that the first parameter is the name of the variable
+    const textRef = useRef();
+
+    useEffect(() => {
+
+        init(textRef.current, {
+
+            // changing a few default values below. you can customize more features by searching library online
+            showCursor: true, // shows the blinking typing cursor beside the text
+            backDelay: 1500, // delay the typing for 1.5 seconds.
+            backSpeed: 60, // type back speed in milliseconds (changed default value of 50ms)
+            strings: ["experiences...", "interests...", "contact information...", "journey!"]
+        });
+    },[])
+
+    /* THIS is important understand the two lines below for setting const. Basically, what is happening is that the first parameter is the name of the variable
        and the second parameter is the name of the method to CHANGE THE VARIABLE. The second parameter is NOT a variable, but a function to change the first variable.
     */
 
@@ -100,6 +115,16 @@ export default function Projects() {
                     </a>
                 </div>
                 ))}
+            </div>
+            <div className="arrowclass">
+                <a href="#projects">
+                        <img src="assets/arrow.png" alt="" />
+                </a>
+            </div>
+            <div className = "typingwords">
+            <br/>
+            <br/>
+            <h3><div>Keep scrolling to see my </div><span ref={textRef}></span></h3>
             </div>
         </div>
     );

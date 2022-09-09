@@ -12,9 +12,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 Nonetheless, this onclick turns the menu off after the click a navigation area, so it gets out of the way.
                 i.e. you click a section, like "home", and it will take you there and make the menu sidebar disappear */}
 
-                <li onClick={()=>setMenuOpen(false)}>
+                {/* <li onClick={()=>setMenuOpen(false)}>
                     <a href="#intro">Home</a>
-                </li>
+                </li> */}
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#projects">Projects</a>
                 </li>
