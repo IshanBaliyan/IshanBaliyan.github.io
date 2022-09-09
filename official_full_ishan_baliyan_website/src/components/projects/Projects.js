@@ -117,7 +117,7 @@ export default function Projects() {
                 ))}
             </div>
             <div className="arrowclass">
-                <a href="#projects">
+                <a href="#experience">
                         <img src="assets/arrow.png" alt="" />
                 </a>
             </div>
