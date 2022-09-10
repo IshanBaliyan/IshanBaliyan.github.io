@@ -62,6 +62,7 @@ export default function Experience() {
             "\n\n• Led and Represented 25,000 members of FIRST Robotics to organize and host National Hackathons, Conferences, Summer camps, " +
             "community initiatives (featured in news), and interviews with President of 3M Canada and CEOs",
             img: "assets/experienceInfo/experience_first_robotics.jpg",
+            stack: "Java, Python, Robotics, Raspberry pi"
         },
         // {
         //     id: "6",

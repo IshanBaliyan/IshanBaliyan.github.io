@@ -55,7 +55,7 @@
             overflow: hidden;
 
             .item{
-                width: 70%; // previously 950px
+                width: 80%; // previously 950px
                 height: 90%;
                 background-color: white;
                 border-radius: 20px;
@@ -132,7 +132,7 @@
                         }
 
                         p{
-                            font-size: 1.1vmax; // previously 20px
+                            font-size: 1rem; // previously 20px
                             overflow: hidden;
                             white-space: pre-line;
                             @include mobile{
