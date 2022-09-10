@@ -116,7 +116,7 @@
                         }
 
                         h2{
-                            font-size: 2vw; // previously 30px
+                            font-size: 2vh; // previously 30px
                             overflow: hidden;
                             @include mobile{
                                 font-size: 12px;
@@ -127,12 +127,12 @@
                             font-size: 1.5vw; // previously 30px
                             overflow: hidden;
                             @include mobile{
-                                font-size: 16px;
+                                font-size: 12px;
                             }
                         }
 
                         p{
-                            font-size: 1.1em; // previously 20px
+                            font-size: 1.1vmax; // previously 20px
                             overflow: hidden;
                             white-space: pre-line;
                             @include mobile{
