@@ -1,58 +1,95 @@
-@import "./global.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.app{
-    height: 100vh;
+html, body {
+  height: 100%;
+}
 
-    /* Adding this scroll container solves a crucial problem in the website for chrome users with a scroll wheel (bug on chrome side) for scroll-snap-type: y mandatory;.
-     Before, the website was skipping elements, but it stopped ater adding this container. Nonetheless, the scrolling was pretty wonky, so it was removed for the sake
-     of the website being more supportive for all browsers/devices. The scroller has therefore been changed to scroll-snap-type: y proximity; for proximity scrolling only*/
-        .sections{
-            width: 100%;
-            /* Need to keep the topbar visible*/
-            height: calc(100vh - 70px);
-            background-color: $themeColor;
-            position: relative;
-            top: 70px; // Normally, this would be at 70px, without the scroll container existing
-            bottom: 0; // added to remove bottom portions
-            overflow-y: scroll;
+.app {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #e8e8e8;
+  font-family: 'EB Garamond', Georgia, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
 
-            @include mobile{
-                bottom: 0;
-                margin-bottom: 0;
-                padding-bottom: 0;
-                height: calc(100vh - 70px);
-                top: 70px;
-            }
+.container {
+  max-width: 580px;
+  width: 100%;
+}
 
-            /* If you click a link in the topbar, e.g. the intro component hyperlink, you
-            should not teloport, but smoothly move there with a similar auto-scrolling behaviour.
-            This also makes snap scrolling slower, smoother and more natural. */
-            scroll-behavior: smooth;
-            
-            // Snaps the scrolling to the nearest component (i.e. colour section)
-            scroll-snap-type: y proximity;
+.name {
+  font-size: 2.42rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
 
-            scrollbar-width: none; // for firefox
+.bio {
+  font-size: 1.155rem;
+  line-height: 1.75;
+  color: #b8b8b8;
+  
+  p {
+    margin-bottom: 1.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: border-color 0.2s ease;
+    
+    &:hover {
+      border-color: #888;
+    }
+  }
+}
 
-            &::-webkit-scrollbar{
-                display: none; // for chrome, and etc...
-            }
+.socials {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  
+  a {
+    color: #666;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #e8e8e8;
+    }
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
 
-            > *{
-                /* Makes EACH (meaning of "*") component take up it's full height and section
-                on the page */
-                width: 100vw;
-                height: calc(100vh - 70px);
-                @include mobile{
-                    height: calc(100vh - 70px);
-                }
-
-                /* Makes you align your snap to each (closest) component */
-                scroll-snap-align: start;
-
-                scroll-snap-stop: always;
-                -webkit-overflow-scrolling: touch; // suggested for ios touch-screen devices
-
-            }
-        }
+@media (max-width: 600px) {
+  .app {
+    padding: 1.5rem;
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+  
+  .name {
+    font-size: 1.98rem;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+  }
 }
