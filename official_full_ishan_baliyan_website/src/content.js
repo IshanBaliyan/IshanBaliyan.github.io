@@ -11,7 +11,7 @@ const content = {
   
   appLink: {
     text: "job-search app.",
-    url: "https://apps.apple.com/ca/app/resume-builder-ai-cv-maker/id6463698204"
+    url: "https://apps.apple.com/us/app/resume-builder-ai-cv-maker/id6463698204"
   },
 
   resumeText: "Resume →",
